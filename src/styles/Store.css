@@ -66,32 +66,35 @@
 }
 
 html, body {
-    height: 100%; /* Убедимся, что высота родителя равна 100% */
+    height: 100%;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
+.tg-container {
+    min-height: 100%;
+    padding-bottom: 50px; /* Задает отступ, чтобы контент не перекрывался меню */
+}
 
 .bottom-menu {
     position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
-    height: 45px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     background-color: rgba(248, 248, 248, 0.8);
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 0; /* Убираем лишние отступы снизу */
+    padding-top: 5px; /* Сохраняем небольшой отступ сверху */
     z-index: 1000;
-    padding-bottom: 0; 
-    padding-top: 7px; 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
 
 .bottom-menu .button {
-    position: relative;
-    font-family: "SF Pro Display Medium";
-    font-weight: 100;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,9 +105,7 @@ html, body {
     gap: 5px;
 }
 
-.bottom-menu .button .icon {
-    position: absolute;
-    bottom: 5px; /* Опускает иконку к нижней части кнопки */
+.bottom-menu .icon {
     font-size: 24px;
 }
 
@@ -113,6 +114,7 @@ html, body {
     position: relative;
     top: 3px;
 }
+
 
 #activeIcon {
     color: #007bff; 
