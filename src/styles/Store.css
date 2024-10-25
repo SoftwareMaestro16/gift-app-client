@@ -74,7 +74,7 @@ html, body {
 
 .tg-container {
     min-height: 100%;
-    padding-bottom: 50px; /* Убедимся, что контент не перекрывается меню */
+    padding-bottom: 50px; /* Отступ под контентом, чтобы не перекрывался меню */
 }
 
 .bottom-menu {
@@ -87,11 +87,12 @@ html, body {
     justify-content: space-between;
     background-color: rgba(248, 248, 248, 0.8);
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    padding-bottom: calc(5px + env(safe-area-inset-bottom)); /* Убираем белое пространство, учитывая вырез */
-    padding-top: 5px;
+    padding-bottom: calc(6px + env(safe-area-inset-bottom)); /* Убираем белое пространство под меню */
     z-index: 1000;
+    
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    margin: 0; /* Убираем любые возможные отступы */
 }
 
 .bottom-menu .button {
