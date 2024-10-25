@@ -1,0 +1,128 @@
+.denied-container {
+    background-color: #313233;
+}
+
+@font-face {
+    font-family: 'SF Pro Display Black Italic';
+    src: url('../fonts/SFPRODISPLAYBLACKITALIC.OTF') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF Pro Display Bold';
+    src: url('../fonts/SFPRODISPLAYBOLD.OTF') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display Heavy Italic';
+    src: url('../fonts/SFPRODISPLAYHEAVYITALIC.OTF') format('opentype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF Pro Display Light Italic';
+    src: url('../fonts/SFPRODISPLAYLIGHTITALIC.OTF') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF Pro Display Medium';
+    src: url('../fonts/SFPRODISPLAYMEDIUM.OTF') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display Regular';
+    src: url('../fonts/SFPRODISPLAYREGULAR.OTF') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display Semibold Italic';
+    src: url('../fonts/SFPRODISPLAYSEMIBOLDITALIC.OTF') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF Pro Display Thin Italic';
+    src: url('../fonts/SFPRODISPLAYTHINITALIC.OTF') format('opentype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF Pro Display Ultralight Italic';
+    src: url('../fonts/SFPRODISPLAYULTRALIGHTITALIC.OTF') format('opentype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+
+.bottom-menu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    background-color: rgba(248, 248, 248, 0.8); 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    padding: 9px 0px; 
+    z-index: 1000;
+    transform: translateX(-8px); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.bottom-menu .button {
+    font-family: "SF Pro Display Medium";
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #999;
+    font-size: 12px;
+    text-decoration: none;
+    flex-grow: 1;
+}
+
+.bottom-menu .button .icon {
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+#activeIcon {
+    color: #007bff; 
+}
+
+.main-store-info {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение элементов */
+    align-items: center;
+    text-align: center;
+    padding-top: 32px; /* Отступ сверху */
+    padding-bottom: 16px; /* Отступ снизу */
+    gap: 7px; /* Расстояние между элементами */
+}
+
+.main-store-info h2 {
+    font-family: 'SF Pro Display Bold';
+    font-size: 24px;
+}
+
+.main-store-info h3 {
+    position: relative;
+    bottom: 28px;
+    font-family: 'SF Pro Display Regular'; /* Поддержка другого стиля для h3 */
+    font-weight: 100;
+    font-size: 18px;
+    color: #585858; /* Можно задать более светлый цвет */
+    opacity: 0.75;
+}
