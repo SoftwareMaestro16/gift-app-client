@@ -65,6 +65,13 @@
     font-style: italic;
 }
 
+html, body {
+    height: 100%; /* Убедимся, что высота родителя равна 100% */
+    margin: 0;
+    padding: 0;
+}
+
+
 .bottom-menu {
     position: fixed;
     bottom: 0;
@@ -74,9 +81,9 @@
     justify-content: space-between;
     background-color: rgba(248, 248, 248, 0.8);
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    padding-top: calc(7px + env(safe-area-inset-bottom));
     z-index: 1000;
-    transform: translateX(-8px);
+    padding-bottom: 0; 
+    padding-top: 7px; 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
@@ -97,7 +104,7 @@
 
 .bottom-menu .button .icon {
     position: absolute;
-    bottom: 15px; /* Опускает иконку к нижней части кнопки */
+    bottom: 5px; /* Опускает иконку к нижней части кнопки */
     font-size: 24px;
 }
 
@@ -106,7 +113,6 @@
     position: relative;
     top: 3px;
 }
-
 
 #activeIcon {
     color: #007bff; 
