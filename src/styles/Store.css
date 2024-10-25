@@ -64,17 +64,10 @@
     font-weight: 200;
     font-style: italic;
 }
-
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
 .tg-container {
     min-height: 100%;
-    padding-bottom: 50px; /* Отступ под контентом, чтобы не перекрывался меню */
+    margin: 0;
+    padding-bottom: 0; /* Removed padding */
 }
 
 .bottom-menu {
@@ -87,12 +80,10 @@ html, body {
     justify-content: space-between;
     background-color: rgba(248, 248, 248, 0.8);
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    padding-bottom: calc(6px + env(safe-area-inset-bottom)); /* Убираем белое пространство под меню */
+    padding-top: 5px;
     z-index: 1000;
-    
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    margin: 0; /* Убираем любые возможные отступы */
 }
 
 .bottom-menu .button {
@@ -115,6 +106,8 @@ html, body {
     position: relative;
     top: 3px;
 }
+
+/* Removed padding-bottom to avoid extra space under the menu */
 
 
 
