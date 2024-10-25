@@ -69,7 +69,8 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden; 
+    
+    
 }
 
 .tg-container {
@@ -134,12 +135,12 @@ html, body {
 
 .main-store-info {
     display: flex;
-    flex-direction: column; /* Вертикальное расположение элементов */
+    flex-direction: column; 
     align-items: center;
     text-align: center;
-    padding-top: 32px; /* Отступ сверху */
-    padding-bottom: 16px; /* Отступ снизу */
-    gap: 7px; /* Расстояние между элементами */
+    padding-top: 32px; 
+    padding-bottom: 16px;
+    gap: 4px;
 }
 
 .main-store-info h2 {
@@ -150,9 +151,66 @@ html, body {
 .main-store-info h3 {
     position: relative;
     bottom: 28px;
-    font-family: 'SF Pro Display Regular'; /* Поддержка другого стиля для h3 */
+    font-family: 'SF Pro Display Regular';
     font-weight: 100;
-    font-size: 18px;
-    color: #585858; /* Можно задать более светлый цвет */
+    font-size: 18.5px;
+    color: #585858; 
     opacity: 0.75;
 }
+
+.gifts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Два подарка в ряд */
+    gap: 5px; /* Расстояние между карточками */
+    justify-content: center; /* Центрирует сами карточки в контейнере */
+    align-items: center; /* Центрирует карточки по вертикали */
+    overflow-y: auto; /* Активирует скроллинг по вертикали, если необходимо */
+    scrollbar-width: none; /* Убирает полосу прокрутки на Firefox */
+  }
+  
+  .gifts-grid::-webkit-scrollbar {
+    display: none; /* Убирает полосу прокрутки на Webkit-браузерах (Chrome, Safari) */
+  }
+  
+  .gift-item {
+    width: 174.5px;
+    height: 246px;
+    border-radius: 12px 0 0 0;
+    justify-content: center; /* Центрирует содержимое внутри карточки */
+  }
+  
+  .gift-background {
+    background: linear-gradient(135deg, #e26dd8 0%, #ce5f34 100%);
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center; /* Центрирует текст внутри карточки */
+  }
+  
+  .gift-emoji {
+    font-size: 48px; /* Размер эмодзи */
+  }
+  
+  .gift-background h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 56px 0;
+  }
+  
+  .gift-background button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .gift-background span {
+    font-size: 12px;
+    color: #888;
+  }
+  
