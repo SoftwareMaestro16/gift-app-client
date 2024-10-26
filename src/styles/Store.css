@@ -189,11 +189,11 @@ html, body {
 }
 
 /* Стили для мобильных устройств */
-@media (max-width > 768px) {
+@media (max-width: 350px) {
     .gift-item {
         
         width: 220px; /* Увеличенный размер для мобильных устройств */
-        height: 2320px;
+        height: 232px;
     }
 
     .tg-container {
