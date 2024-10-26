@@ -276,6 +276,39 @@ background-image: radial-gradient(at 46.97338449110977% 47.71383426833238%, hsla
     box-shadow: none;
 }
 
+.price-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 18px; 
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 18px; 
+    cursor: pointer;
+    font-family: 'SF Pro Display Regular';
+    font-size: 15px;
+    white-space: nowrap;
+    width: auto; 
+}
+
+.price-button .icon-tether {
+    margin-right: 4px; /* Smaller space between the icon and text */
+    display: flex;
+    align-items: center;
+}
+
+.price-button .icon {
+    margin-right: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 20px; 
+    overflow: hidden; 
+    object-fit: contain; 
+}
+
 @media (min-width: 430px) {
     .gifts-grid {
         gap: 9px;
