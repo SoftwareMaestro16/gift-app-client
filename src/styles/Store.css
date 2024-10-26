@@ -169,6 +169,7 @@ html, body {
     overflow-y: auto;
     max-height: calc(100vh - 230px); 
     scrollbar-width: none;
+    margin-bottom: 8px;
 }
 
 .gifts-grid::-webkit-scrollbar {
