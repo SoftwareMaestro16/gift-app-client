@@ -49,7 +49,7 @@ declare global {
   
     return (
       <>
-          {isTg ? (
+          {!isTg ? (
               <div className="denied-container">
               </div>
           ) : (
