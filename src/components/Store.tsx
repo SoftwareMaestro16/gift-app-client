@@ -111,7 +111,7 @@ declare global {
                         {blueIcon}
                     </div>
                     <br />
-                        <span className='quantity-gifts'>174.5 of 246</span>
+                        <span className='quantity-gifts'>174 of 246</span>
                         <h4>Blue Star</h4>
                         <button>10 TON</button>
                       </div>

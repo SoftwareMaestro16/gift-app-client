@@ -160,6 +160,8 @@ html, body {
 }
 
 .gifts-grid {
+    overflow-x: hidden; /* Запрещает прокрутку по оси X */
+    overflow-y: auto;
     transform: translateY(-20px);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -186,7 +188,7 @@ html, body {
 
 .gift-item {
     width: 200px;
-    height: 236px;
+    height: 246px;
 }
   
 .gift-emoji {
@@ -198,8 +200,8 @@ html, body {
     position: relative;
     font-size: 18px;
     font-weight: bold;
-    top: 38px;
-    margin: 56px 0;
+    top: 60px;
+    margin: 60px 0;
 }
   
 .gift-background button {
@@ -216,7 +218,7 @@ html, body {
     position: relative;
     font-family: 'SF Pro Display Bold';
     bottom: 26px;
-    right: -38%;
+    left: 35%;
 }
   
 .gift-background span {
@@ -227,15 +229,27 @@ html, body {
 
 .cake-icon {
     position: absolute;
-    top: 20px; /* Настройте значения, чтобы располагать иконку, как нужно */
+    top: 42px; /* Настройте значения, чтобы располагать иконку, как нужно */
     left: 50%;
     transform: translateX(-50%);
     pointer-events: none;
     z-index: 1; /* Убедитесь, что иконка находится выше других элементов */
 }
 
+.gift-background {
+    background: linear-gradient(135deg, #e26dd8 0%, #ce5f34 100%);
+    border-radius: 12px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
   
-@media (min-width: 440px) {
+@media (min-width: 450px) {
     .gifts-grid {
         gap: 9px;
     }
@@ -261,16 +275,9 @@ html, body {
         
     }
 
+    .gift-background h4 {
+        margin: 58px 0;
+    }
     
 }
 
-.gift-background {
-    background: linear-gradient(135deg, #e26dd8 0%, #ce5f34 100%);
-    border-radius: 12px;
-    padding: 18px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-}
