@@ -159,14 +159,14 @@ html, body {
     opacity: 0.75;
 }
 
-/* Общие стили */
 .gifts-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Два подарка в ряд */
-    gap: 6px;
-    justify-content: center;
+    gap: 12px; /* Увеличенное расстояние между карточками */
+    justify-content: center; /* Центрируем карточки по горизонтали */
+    padding: 0 16px; /* Добавляем отступы по бокам */
     overflow-y: auto;
-    max-height: calc(100vh - 190px); /* Увеличиваем область для скроллинга */
+    max-height: calc(100vh - 230px); /* Увеличенная область для прокрутки */
     scrollbar-width: none;
 }
 
@@ -178,20 +178,22 @@ html, body {
     border-radius: 12px;
     justify-content: center;
     text-align: center;
+    margin: 0 auto; /* Центрируем сами карточки */
 }
+
 
 /* Стили для десктопа */
 .gift-item {
     width: 174.5px;
-    height: 246px;
+    height: 232px;
 }
 
 /* Стили для мобильных устройств */
-@media (max-width: 768px) {
+@media (max-width > 768px) {
     .gift-item {
         
-        width: 176px; /* Увеличенный размер для мобильных устройств */
-        height: 230px;
+        width: 186px; /* Увеличенный размер для мобильных устройств */
+        height: 240px;
     }
 
     .tg-container {
