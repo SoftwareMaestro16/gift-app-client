@@ -271,6 +271,11 @@ background-image: radial-gradient(at 46.97338449110977% 47.71383426833238%, hsla
     transform: scale(0.75); 
 }
 
+.bottom-menu .button:focus {
+    outline: none; 
+    box-shadow: none;
+}
+
 @media (min-width: 430px) {
     .gifts-grid {
         gap: 9px;
