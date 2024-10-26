@@ -192,8 +192,8 @@ html, body {
 @media (max-width > 768px) {
     .gift-item {
         
-        width: 186px; /* Увеличенный размер для мобильных устройств */
-        height: 240px;
+        width: 200px; /* Увеличенный размер для мобильных устройств */
+        height: 260px;
     }
 
     .tg-container {
