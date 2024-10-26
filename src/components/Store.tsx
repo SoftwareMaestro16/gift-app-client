@@ -82,11 +82,11 @@ declare global {
 
                   <div className="gifts-grid">
                     <div className="gift-item">
-                      <div className="gift-background">
-                      <div className="cake-icon">
-                        {cakeIcon}
-                    </div>
-                          <br />
+                      <div className="gift-background gift-cake">
+                        <div className="cake-icon">
+                          {cakeIcon}
+                        </div>
+                        <br />
                         <span className='quantity-gifts'>3 of 500</span>
                         <h4>Delicious Cake</h4>
                         <button>10 USDT</button>
@@ -94,11 +94,11 @@ declare global {
                     </div>
 
                     <div className="gift-item">
-                      <div className="gift-background">
-                      <div className="cake-icon">
-                        {greenIcon}
-                    </div>
-                    <br />
+                      <div className="gift-background gift-green">
+                        <div className="cake-icon">
+                          {greenIcon}
+                        </div>
+                        <br />
                         <span className='quantity-gifts'>802 of 3K</span>
                         <h4>Green Star</h4>
                         <button>5 TON</button>
@@ -106,11 +106,11 @@ declare global {
                     </div>
 
                     <div className="gift-item">
-                      <div className="gift-background">
-                      <div className="cake-icon">
-                        {blueIcon}
-                    </div>
-                    <br />
+                      <div className="gift-background gift-blue">
+                        <div className="cake-icon">
+                          {blueIcon}
+                        </div>
+                        <br />
                         <span className='quantity-gifts'>174 of 246</span>
                         <h4>Blue Star</h4>
                         <button>10 TON</button>
@@ -118,17 +118,18 @@ declare global {
                     </div>
 
                     <div className="gift-item">
-                      <div className="gift-background">
-                      <div className="cake-icon">
-                        {redIcon}
-                    </div>
-                    <br />
+                      <div className="gift-background gift-red">
+                        <div className="cake-icon">
+                          {redIcon}
+                        </div>
+                        <br />
                         <span className='quantity-gifts'>10K of 10K</span>
                         <h4>Red Star</h4>
-                        <button>15 TON</button>
+                        <button>0.002 ETH</button>
                       </div>
                     </div>
-                  </div>
+                </div>
+
 
               <br />
               <br />
