@@ -204,12 +204,8 @@ html, body {
     }
 
     .gift-background button {
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        border-radius: 8px;
         padding: 18px 28px;
-        cursor: pointer;
+
     }
 }
 
