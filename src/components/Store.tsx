@@ -5,7 +5,7 @@ import '../styles/Store.css';
 import { storeIconActive } from '../assets/menuImages/menuImgaesActive.tsx';
 import { giftIcon, leaderboardIcon, profileIcon } from '../assets/menuImages/menuImagesNone.tsx';
 import { mainStoreIcon } from '../assets/storeImages/mainStoreIcon.tsx';
-import { cakeIcon } from '../assets/giftBackgrounds/giftBackgroundsStore.tsx';
+import { cakeIcon, greenIcon, blueIcon, redIcon } from '../assets/giftBackgrounds/giftBackgroundsStore.tsx';
 
 declare global {
     interface Window {
@@ -50,7 +50,7 @@ declare global {
   
     return (
       <>
-          {!isTg ? (
+          {isTg ? (
               <div className="denied-container">
               </div>
           ) : (
@@ -95,8 +95,11 @@ declare global {
 
                     <div className="gift-item">
                       <div className="gift-background">
-                        <span className="gift-emoji">⭐</span>
-                        <span>802 of 3K</span>
+                      <div className="cake-icon">
+                        {greenIcon}
+                    </div>
+                    <br />
+                        <span className='quantity-gifts'>802 of 3K</span>
                         <h4>Green Star</h4>
                         <button>5 TON</button>
                       </div>
@@ -104,8 +107,11 @@ declare global {
 
                     <div className="gift-item">
                       <div className="gift-background">
-                        <span className="gift-emoji">🔵</span>
-                        <span>174.5 of 246</span>
+                      <div className="cake-icon">
+                        {blueIcon}
+                    </div>
+                    <br />
+                        <span className='quantity-gifts'>174.5 of 246</span>
                         <h4>Blue Star</h4>
                         <button>10 TON</button>
                       </div>
@@ -113,8 +119,11 @@ declare global {
 
                     <div className="gift-item">
                       <div className="gift-background">
-                        <span className="gift-emoji">🔴</span>
-                        <span>10K of 10K</span>
+                      <div className="cake-icon">
+                        {redIcon}
+                    </div>
+                    <br />
+                        <span className='quantity-gifts'>10K of 10K</span>
                         <h4>Red Star</h4>
                         <button>15 TON</button>
                       </div>
