@@ -202,6 +202,15 @@ html, body {
     .tg-container {
         padding-top: 0px; /* Поднимаем блок подарков выше */
     }
+
+    .gift-background button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 16px 22px;
+        cursor: pointer;
+    }
 }
 
 .gift-background {
@@ -231,7 +240,7 @@ html, body {
     color: #fff;
     border: none;
     border-radius: 8px;
-    padding: 8px 16px;
+    padding: 10px 24px;
     cursor: pointer;
   }
   
