@@ -125,7 +125,7 @@ declare global {
                         <br />
                         <span className='quantity-gifts'>10K of 10K</span>
                         <h4>Red Star</h4>
-                        <button>0.002 ETH</button>
+                        <button>0.01 ETH</button>
                       </div>
                     </div>
                 </div>

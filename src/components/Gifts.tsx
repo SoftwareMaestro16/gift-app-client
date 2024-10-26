@@ -72,6 +72,12 @@ declare global {
                       <span className="label">Profile</span>
                     </div>
                   </div>
+
+                  <div className="main-gifts-info">
+
+                    <h2>Send Gifts in Telegram</h2>
+                    <h3>Send gifts to users that can be stored in their app profile.</h3>
+                  </div>
   
                 <BackButton />
                   
