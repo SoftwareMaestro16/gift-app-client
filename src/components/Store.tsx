@@ -80,42 +80,48 @@ declare global {
                   </div>
 
                   <div className="gifts-grid">
-  <div className="gift-item">
-    <div className="gift-background"> {/* Градиентный фон */}
-      <span className="gift-emoji">🎂</span>
-      <span>3 of 500</span>
-      <h4>Delicious Cake</h4>
-      <button>10 USDT</button>
-    </div>
-  </div>
+                    <div className="gift-item">
+                      <div className="gift-background"> {/* Градиентный фон */}
+                        <span className="gift-emoji">🎂</span>
+                        <span>3 of 500</span>
+                        <h4>Delicious Cake</h4>
+                        <button>10 USDT</button>
+                      </div>
+                    </div>
 
-  <div className="gift-item">
-    <div className="gift-background">
-      <span className="gift-emoji">⭐</span>
-      <span>802 of 3K</span>
-      <h4>Green Star</h4>
-      <button>5 TON</button>
-    </div>
-  </div>
+                    <div className="gift-item">
+                      <div className="gift-background">
+                        <span className="gift-emoji">⭐</span>
+                        <span>802 of 3K</span>
+                        <h4>Green Star</h4>
+                        <button>5 TON</button>
+                      </div>
+                    </div>
 
-  <div className="gift-item">
-    <div className="gift-background">
-      <span className="gift-emoji">🔵</span>
-      <span>174.5 of 246</span>
-      <h4>Blue Star</h4>
-      <button>10 TON</button>
-    </div>
-  </div>
+                    <div className="gift-item">
+                      <div className="gift-background">
+                        <span className="gift-emoji">🔵</span>
+                        <span>174.5 of 246</span>
+                        <h4>Blue Star</h4>
+                        <button>10 TON</button>
+                      </div>
+                    </div>
 
-  <div className="gift-item">
-    <div className="gift-background">
-      <span className="gift-emoji">🔴</span>
-      <span>10K of 10K</span>
-      <h4>Red Star</h4>
-      <button>15 TON</button>
-    </div>
-  </div>
-</div>
+                    <div className="gift-item">
+                      <div className="gift-background">
+                        <span className="gift-emoji">🔴</span>
+                        <span>10K of 10K</span>
+                        <h4>Red Star</h4>
+                        <button>15 TON</button>
+                      </div>
+                    </div>
+                  </div>
+
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
 
 
 
