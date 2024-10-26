@@ -135,7 +135,7 @@ const Profile = () => {
                                     {user?.first_name ? user.first_name[0].toUpperCase() : 'U'}
                                 </div>
                             )}
-                            <p className="user-id">#160</p>
+                            <p className="user-rating">#160</p>
                             <p className="user-name">
                                 {user?.first_name}
                                 {user?.is_premium && <span className="premium-icon">{premiumIcon}</span>}
