@@ -24,3 +24,11 @@
     padding-left: 45px;
     padding-right: 45px; 
 }
+
+@media (min-width: 430px) {
+    .main-gifts-info h3 {
+        padding-left: 50px;
+        padding-right: 50px; 
+    }
+    
+}
