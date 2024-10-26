@@ -5,6 +5,7 @@ import '../styles/Store.css';
 import { storeIconActive } from '../assets/menuImages/menuImgaesActive.tsx';
 import { giftIcon, leaderboardIcon, profileIcon } from '../assets/menuImages/menuImagesNone.tsx';
 import { mainStoreIcon } from '../assets/storeImages/mainStoreIcon.tsx';
+import { cakeIcon } from '../assets/giftBackgrounds/giftBackgroundsStore.tsx';
 
 declare global {
     interface Window {
@@ -81,9 +82,12 @@ declare global {
 
                   <div className="gifts-grid">
                     <div className="gift-item">
-                      <div className="gift-background"> {/* Градиентный фон */}
-                        <span className="gift-emoji">🎂</span>
-                        <span>3 of 500</span>
+                      <div className="gift-background">
+                      <div className="cake-icon">
+                        {cakeIcon}
+                    </div>
+                          <br />
+                        <span className='quantity-gifts'>3 of 500</span>
                         <h4>Delicious Cake</h4>
                         <button>10 USDT</button>
                       </div>

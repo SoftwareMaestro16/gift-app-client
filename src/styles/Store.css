@@ -78,8 +78,8 @@ html, body {
     flex-direction: column;
     justify-content: space-between; 
     padding-bottom: 50px; 
-    height: 100vh; /* Make it take full viewport height */
-    overflow-y: hidden; /* Prevent page scrolling */
+    height: 100vh; 
+    overflow-y: hidden; 
 }
 
 .main-store-info {
@@ -161,12 +161,12 @@ html, body {
 
 .gifts-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Два подарка в ряд */
-    gap: 11px; /* Увеличенное расстояние между карточками */
-    justify-content: center; /* Центрируем карточки по горизонтали */
-    padding: 0 16px; /* Добавляем отступы по бокам */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 11px; 
+    justify-content: center; 
+    padding: 0 16px; 
     overflow-y: auto;
-    max-height: calc(100vh - 230px); /* Увеличенная область для прокрутки */
+    max-height: calc(100vh - 230px); 
     scrollbar-width: none;
 }
 
@@ -178,57 +178,66 @@ html, body {
     border-radius: 12px;
     justify-content: center;
     text-align: center;
-    margin: 0 auto; /* Центрируем сами карточки */
+    margin: 0 auto; 
 }
 
-
-/* Стили для десктопа */
 .gift-item {
     width: 174.5px;
     height: 232px;
 }
-
-
   
 .gift-emoji {
-    font-size: 48px; /* Размер эмодзи */
+    font-size: 48px;
   }
   
-  .gift-background h4 {
-    
+.gift-background h4 {
+    font-family: 'SF Pro Display Bold';
+    position: relative;
     font-size: 18px;
     font-weight: bold;
+    top: 38px;
     margin: 56px 0;
-  }
+}
   
-  .gift-background button {
+.gift-background button {
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 8px;
     padding: 10px 26px;
     cursor: pointer;
-  }
-  
-  .gift-background span {
-    font-size: 12px;
-    color: #888;
-  }
-  
+}
 
-/* Стили для мобильных устройств */
+.quantity-gifts {
+    display: flex;
+    position: relative;
+    font-family: 'SF Pro Display Bold';
+    bottom: 26px;
+    right: -38%;
+}
+  
+.gift-background span {
+    font-size: 12px;
+    color: #2c2c2c;
+}
+
+.cake-icon {
+    position: absolute;
+    margin: 10px auto; 
+}
+  
 @media (min-width: 400px) {
     .gifts-grid {
-        gap: 9px; /* Увеличенное расстояние между карточками */
+        gap: 9px;
     }
 
     .gift-item {
-        width: 200px; /* Увеличенный размер для мобильных устройств */
+        width: 200px;
         height: 250px;
     }
 
     .tg-container {
-        padding-top: -10px; /* Поднимаем блок подарков выше */
+        padding-top: -10px; 
     }
 
     .gift-background button {
@@ -240,7 +249,7 @@ html, body {
         font-family: 'SF Pro Display Bold';
         font-size: 22px;
         
-      }
+    }
 }
 
 .gift-background {
