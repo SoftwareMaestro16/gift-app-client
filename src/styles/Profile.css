@@ -78,7 +78,7 @@
     font-family: 'SF Pro Display Bold';
     position: relative;
     bottom: 20px;
-    font-size: 1.25rem;
+    font-size: 24px;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -87,22 +87,22 @@
 
 .user-gifts {
     font-family: 'SF Pro Display Regular';
-    font-size: 0.85rem;
+    font-size: 16px;
     color: #888;
     position: relative;
-    bottom: 44px;
+    bottom: 54px;
 }
 
 .recent-actions {
     font-family: 'SF Pro Display Regular';
-    font-size: 1.075rem;
+    font-size: 18px;
     color: #1a73e8;
     cursor: pointer;
-    margin-top: -32px;
+    margin-top: -42px;
 }
 .premium-icon {
     display: inline-flex;
-    width: 20px;
+    width: 24px;
     height: 24px;
     margin-left: 5px;
 }
