@@ -286,14 +286,14 @@ background-image: radial-gradient(at 46.97338449110977% 47.71383426833238%, hsla
     border: none;
     border-radius: 18px; 
     cursor: pointer;
-    font-family: 'SF Pro Display Regular';
-    font-size: 15px;
+    font-family: 'SF Pro Display Bold';
+    font-size: 20px;
     white-space: nowrap;
     width: auto; 
 }
 
 .price-button .icon-tether {
-    margin-right: 4px; /* Smaller space between the icon and text */
+    margin-right: 4px; 
     display: flex;
     align-items: center;
 }
