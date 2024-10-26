@@ -77,8 +77,9 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
-    
     padding-bottom: 50px; 
+    height: 100vh; /* Make it take full viewport height */
+    overflow-y: hidden; /* Prevent page scrolling */
 }
 
 .main-store-info {
@@ -160,18 +161,17 @@ html, body {
 
 .gifts-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Два подарка в ряд */
-    gap: 5px; /* Расстояние между карточками */
-    justify-content: center; /* Центрирует сами карточки в контейнере */
-    align-items: center; /* Центрирует карточки по вертикали */
-    overflow-y: auto; /* Активирует скроллинг по вертикали, если необходимо */
-    scrollbar-width: none; /* Убирает полосу прокрутки на Firefox */
-  }
-  
-  .gifts-grid::-webkit-scrollbar {
-    display: none; /* Убирает полосу прокрутки на Webkit-браузерах (Chrome, Safari) */
-  }
-  
+    grid-template-columns: repeat(2, 1fr); /* Two items per row */
+    gap: 5px; /* Spacing between items */
+    justify-content: center; /* Center items horizontally */
+    overflow-y: auto; /* Enable scrolling for this section */
+    max-height: calc(100vh - 250px); /* Adjust based on header/menu height */
+    scrollbar-width: none; /* Hide scrollbar on Firefox */
+}
+
+.gifts-grid::-webkit-scrollbar {
+    display: none; /* Hide scrollbar on Webkit browsers */
+}
   .gift-item {
     width: 174.5px;
     height: 246px;
