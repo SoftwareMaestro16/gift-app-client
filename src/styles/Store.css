@@ -163,9 +163,10 @@ html, body {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Два элемента в ряд */
     gap: 1px; /* Расстояние между элементами */
+    padding-top: -16px;
     padding-left: 10px; /* Отступ слева для центрирования */
     overflow-y: auto; /* Скролл только для этого контейнера */
-    max-height: calc(100vh - 200px); /* Высота контейнера */
+    max-height: calc(100vh - 190px); /* Высота контейнера */
     scrollbar-width: none; /* Скрыть скролл на Firefox */
 }
 
@@ -174,8 +175,8 @@ html, body {
 }
 
   .gift-item {
-    width: 174.5px;
-    height: 246px;
+    width: 178px;
+    height: 244px;
     border-radius: 12px 0 0 0;
     justify-content: center; /* Центрирует содержимое внутри карточки */
   }
