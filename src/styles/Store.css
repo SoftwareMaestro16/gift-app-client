@@ -140,8 +140,8 @@ html, body {
     align-items: center;
     text-align: center;
     padding-top: 32px; 
-    padding-bottom: 16px;
-    gap: 4px;
+    padding-bottom: -8px;
+    gap: 3px;
 }
 
 .main-store-info h2 {
@@ -162,8 +162,7 @@ html, body {
 .gifts-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Два элемента в ряд */
-    gap: 3px; /* Расстояние между элементами */
-    padding-right: 10px; /* Отступ справа для компенсации скроллера */
+    gap: 1px; /* Расстояние между элементами */
     padding-left: 10px; /* Отступ слева для центрирования */
     overflow-y: auto; /* Скролл только для этого контейнера */
     max-height: calc(100vh - 200px); /* Высота контейнера */
