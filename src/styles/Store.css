@@ -160,7 +160,7 @@ html, body {
 }
 
 .gifts-grid {
-    overflow-x: hidden; /* Запрещает прокрутку по оси X */
+    overflow-x: hidden;
     overflow-y: auto;
     transform: translateY(-20px);
     display: grid;
@@ -210,8 +210,10 @@ html, body {
     border: none;
     border-radius: 8px;
     margin-top: 10px;
-    padding: 8px 28px;
+    padding: 8px 34px;
     cursor: pointer;
+    font-family: 'SF Pro Display Regular';
+    font-size: 15px;
 }
 
 .quantity-gifts {
@@ -225,8 +227,8 @@ html, body {
 .gift-background span {
     font-size: 13px;
     color: #2c2c2c;
+    
 }
-
 
 .cake-icon {
     position: absolute;
