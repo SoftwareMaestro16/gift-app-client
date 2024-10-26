@@ -69,6 +69,11 @@ const Profile = () => {
         }
     }, []);
 
+    const getUpdatedPhotoUrl = (): string | undefined => {
+      return user?.photo_url ? `${user.photo_url}?random=${Math.random()}` : undefined;
+  };
+  
+
     return (
         <>
             {!isTg ? (
@@ -78,8 +83,8 @@ const Profile = () => {
             ) : (
                 <div className="tg-container">
                     <div className="user-profile">
-                        {user?.photo_url ? (
-                            <img src={user.photo_url} alt="User Avatar" className="user-avatar" />
+                        {getUpdatedPhotoUrl() ? (
+                            <img src={getUpdatedPhotoUrl()} alt="User Avatar" className="user-avatar" />
                         ) : (
                             <div className="placeholder-avatar">Нет фото</div>
                         )}
