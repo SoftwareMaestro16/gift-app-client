@@ -188,46 +188,9 @@ html, body {
     height: 232px;
 }
 
-/* Стили для мобильных устройств */
-@media (min-width: 400px) {
-    .gifts-grid {
-        gap: 9px; /* Увеличенное расстояние между карточками */
-    }
-
-    .gift-item {
-        width: 200px; /* Увеличенный размер для мобильных устройств */
-        height: 238px;
-    }
-
-    .tg-container {
-        padding-top: 0px; /* Поднимаем блок подарков выше */
-    }
-
-    .gift-background button {
-        padding: 18px 28px;
-
-    }
-
-    .gift-background h4 {
-        font-family: 'SF Pro Display Bold';
-        font-size: 22px;
-        
-      }
-}
-
-.gift-background {
-    background: linear-gradient(135deg, #e26dd8 0%, #ce5f34 100%);
-    border-radius: 12px;
-    padding: 18px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-}
 
   
-  .gift-emoji {
+.gift-emoji {
     font-size: 48px; /* Размер эмодзи */
   }
   
@@ -252,3 +215,41 @@ html, body {
     color: #888;
   }
   
+
+/* Стили для мобильных устройств */
+@media (min-width: 400px) {
+    .gifts-grid {
+        gap: 9px; /* Увеличенное расстояние между карточками */
+    }
+
+    .gift-item {
+        width: 200px; /* Увеличенный размер для мобильных устройств */
+        height: 250px;
+    }
+
+    .tg-container {
+        padding-top: -10px; /* Поднимаем блок подарков выше */
+    }
+
+    .gift-background button {
+        padding: 13px 36px;
+
+    }
+
+    .gift-background h4 {
+        font-family: 'SF Pro Display Bold';
+        font-size: 22px;
+        
+      }
+}
+
+.gift-background {
+    background: linear-gradient(135deg, #e26dd8 0%, #ce5f34 100%);
+    border-radius: 12px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
