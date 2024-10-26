@@ -189,7 +189,7 @@ html, body {
 }
 
 /* Стили для мобильных устройств */
-@media (max-width: 380px) {
+@media (min-width: 700px) {
     .gifts-grid {
         gap: 5px; /* Увеличенное расстояние между карточками */
     }
